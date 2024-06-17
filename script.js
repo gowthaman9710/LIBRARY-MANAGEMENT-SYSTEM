@@ -13,7 +13,7 @@ let pass
 if(sessionStorage.validate!="success"){
     localStorage.status="failure"
 }
-if(location.href=="http://127.0.0.1:5500/login.html#" || location.href=="http://127.0.0.1:5500/login.html"){
+if(location.href=="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/login.html#" || location.href=="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/login.html"){
 try{
 user2.addEventListener("change",()=>{
       getUser(user2)
@@ -35,7 +35,7 @@ submit2.addEventListener("click",()=>{
 if(localStorage.status=="success" && sessionStorage.validate=="failure"){
         localStorage.setItem("flag",true)
         sessionStorage.setItem("validate","success")
-        location.href="./main.html"
+        location.href="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/main.html"
 }else{
     sessionStorage.setItem("validate","failure") 
 }
@@ -68,13 +68,13 @@ else{
 if(flag==true && localStorage.status=="success"){
     warning.innerHTML="<p>LOGIN SUCCESSFUL</p>"
     setTimeout(()=>{
-        location.href="./main.html"
+        location.href="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/main.html"
      },3000)
 }else{
     warning.appendChild(newptag)
     newptag.innerText="Invalid password"
     setTimeout(()=>{
-        location.href="./login.html"
+        location.href="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/login.html"
      },3000)
 }
 }
@@ -84,16 +84,16 @@ if(localStorage.status=="success"){
 }
 
 //-----------------------------HOME-----------------------------//
-if(location.href=="http://127.0.0.1:5500/main.html" || location.href=="http://127.0.0.1:5500/main.html#"){
+if(location.href=="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/main.html" || location.href=="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/main.html#"){
 nav()
 // `function addbook(){
 // }`
 }
 function nav(){
     if(localStorage.status=="success" && flag==true){
-        location.href=="http://127.0.0.1:5500/main.html"
+        location.href=="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/main.html"
     }else{
-        location.href="http://127.0.0.1:5500/login.html#"
+        location.href="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/login.html#"
     } 
 let mainlog=document.getElementById("mlog")
 let mainsignup=document.getElementById("msignup")
@@ -108,11 +108,11 @@ let mainsignup=document.getElementById("msignup")
 let mlogout=document.getElementById("mlogout")
 mlogout.addEventListener("click",()=>{
     localStorage.status="failure"
-    location.href="./login.html"
+    location.href="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/login.html"
 })
 let borrowbooks=document.getElementById("borrowbooks")
 borrowbooks.addEventListener("click",()=>{
-     location.href="./borrowbooks.html"
+     location.href="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/borrowbooks.html"
 })
 }
 // if(flag==false){
@@ -141,7 +141,7 @@ let submit1=document.getElementById("submit1")
 let warning2=document.getElementById("warning2")
 let flag_signup=true
 // console.log(dbusers,"  ",dbvalues)
-if(location.href=="http://127.0.0.1:5500/signup.html#" || location.href=="http://127.0.0.1:5500/signup.html"){
+if(location.href=="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/signup.html#" || location.href=="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/signup.html"){
 fname.addEventListener("change",()=>{
     fname1(fname)
 })
@@ -207,19 +207,19 @@ function storeinfo(){
       }
     }   
     if(localStorage.status=="wait"){
-        location.href="./login.html"
+        location.href="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/login.html"
     }
 }
 if(localStorage.status=="success" && localStorage.getItem(user1a)==pass1a){
     setTimeout(()=>{
-        location.href="./main.html"
+        location.href=".https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/main.html"
     },2000)
 }
 }
 
 
 //borrow books  
-if(location.href=="http://127.0.0.1:5500/borrowbooks.html" || location.href=="http://127.0.0.1:5500/borrowbooks.html#"){
+if(location.href=="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/borrowbooks.html" || location.href=="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/borrowbooks.html#"){
    
 let bkname=document.getElementById("bkname")
 let bookname
@@ -579,12 +579,12 @@ if(bookavail[1]=="success" && booknames[bookavail[0]]==bookname){
     nav()
 }
 if(localStorage.status!="success" && sessionStorage.validate!="success"){
-    location.href="./login.html"
+    location.href="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/login.html"
 }
 }
   //calling  navbar function
 // if(sessionStorage.length<=1 && sessionStorage.key(0)=="IsThisFirstTime_Log_From_LiveServer" && sessionStorage.validate!="success"){
-//      location.href="./login.html"
+//      location.href="https://gowthaman9710.github.io/LIBRARY-MANAGEMENT-SYSTEM/login.html"
 // }
 
 // fetch("./data.json")
